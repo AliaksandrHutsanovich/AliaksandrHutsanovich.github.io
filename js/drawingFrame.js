@@ -343,15 +343,15 @@ module.exports =function drawingFrame() {
         
     }
     
-    if (y11==-10 && document.location.href=="http://localhost:8080/views/level5.html") { //the condition of going to next level
-        document.location.href="http://localhost:8080/views/YouWon.html";
+    if (y11==-10 && document.location.href=="../views/level5.html") { //the condition of going to next level
+        document.location.href="../views/YouWon.html";
     }
-    if (y11==-10 && document.location.href!="http://localhost:8080/views/level5.html") {
+    if (y11==-10 && document.location.href!="../views/level5.html") {
         var mas=document.querySelector(".elements>:nth-child(3)").innerText.split("");
         for (var i=0; i<mas.length; i++) {
             if (Number(mas[i]) || (Number(mas[i])==0 && mas[i]!=" ")) {
                 mas[i]=Number(mas[i])+1;
-                var str="http://localhost:8080/views/level"+String(mas[i])+".html";
+                var str="../views/level"+String(mas[i])+".html";
                 document.location.href=str;
             }
         }
