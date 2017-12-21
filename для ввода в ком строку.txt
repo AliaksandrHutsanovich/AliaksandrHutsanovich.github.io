@@ -1,0 +1,10 @@
+chdir /d D:\Программирование\Обучение в EPAM\Game
+
+.\node_modules\.bin\webpack-dev-server
+
+var enter_menu=new Menu_EnterGame();
+document.getElementsByTagName("header")[0].parentNode.appendChild(enter_menu.frame);
+
+
+       var game_field=new Game_Field(Smile_Card, 10);
+       document.getElementsByTagName("header")[0].parentNode.appendChild(game_field.frame);

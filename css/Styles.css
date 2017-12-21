@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+}
+
+.entrance_menu img {
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.entrance_menu h1 {
+    font-style: italic;
+    text-align: center;
+    color: red;
+}
+
+.entrance_menu a {
+    font-style: italic;
+    margin-left: 45%;
+    font-size: 20px;
+    color: red;
+}
+
+.entrance_menu a:hover {
+    color: blue;
+}
+
+.entrance_menu p {
+    font-style: italic;
+    margin-left: 40%;
+    float: right;
+    color: yellow;
+    font-size: 30px;
+}
+
+.entrance_menu p:before {
+    content: url(../images/star.jpg);
+}
+
+.elements {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.elements p {
+    color: red;
+    font-family: COMIC SANS MS;
+}
+
+.elements>:nth-child(3) {
+    margin-left: 400px; 
+    width: 200px;
+}
+
+.elements>:nth-child(4) {
+    margin-left: 300px;
+}
+
+.conclusion img {
+    margin-left: 35%;
+    margin-top: 50px;
+}
+
+.conclusion h1 {
+    font-style: italic;
+    text-align: center;
+    color: red;
+}
+
+.conclusion a {
+    font-style: italic;
+    margin-left: 45%;
+    font-size: 20px;
+    color: red;
+}
+
+.conclusion a:hover {
+    color: blue;
+}
+
+.conclusion p {
+    font-style: italic;
+    margin-left: 40%;
+    float: right;
+    color: yellow;
+    font-size: 30px;
+}
