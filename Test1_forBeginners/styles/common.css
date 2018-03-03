@@ -1,0 +1,14 @@
+* {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: auto; }
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url("../fonts/9206.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=common.css.map */

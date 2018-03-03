@@ -1,0 +1,148 @@
+@media (min-width: 1349px) {
+  header {
+    width: 1349px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 672px;
+    background-color: #082841;
+    flex-wrap: wrap; }
+    header .my-photo {
+      width: 39.4285714286%;
+      height: 672px;
+      background: url(../images/myPhoto2.jpg) no-repeat;
+      background-size: 100% 120%; }
+    header > div:nth-child(2) {
+      width: 450px;
+      color: white;
+      padding-top: 65px;
+      padding-left: 65px;
+      padding-right: 18.3839881394%; }
+      header > div:nth-child(2) > :first-child {
+        font-family: Helvetica-Bold;
+        font-size: 24px; }
+      header > div:nth-child(2) > :nth-child(2) {
+        font-family: Helvetica-Bold;
+        font-size: 40px; }
+    header > :nth-child(3) {
+      width: 600px;
+      height: auto;
+      color: white;
+      padding-top: 234px;
+      padding-left: 65px; }
+      header > :nth-child(3) > first-child {
+        font-family: Georgia;
+        font-size: 20px; } }
+@media (min-width: 1024px) and (max-width: 1348px) {
+  header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 768px;
+    background-color: #082841;
+    width: 1020px; }
+    header .my-photo {
+      width: 424px;
+      height: 768px;
+      background: url(../images/myPhoto2.jpg) no-repeat -60px;
+      background-size: 120% 100%; }
+    header > :nth-child(2) {
+      color: white;
+      padding-top: 65px;
+      padding-left: 26px;
+      width: 37%; }
+      header > :nth-child(2) > :first-child {
+        font-family: Helvetica-Bold;
+        font-size: 24px; }
+      header > :nth-child(2) > :nth-child(2) {
+        font-family: Helvetica-Bold;
+        font-size: 40px; }
+    header > :nth-child(3) {
+      width: 37%;
+      color: white;
+      padding-left: 26px;
+      padding-top: 234px; }
+      header > :nth-child(3) > first-child {
+        font-family: Georgia;
+        font-size: 20px; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    background-color: #082841;
+    width: 768px;
+    color: white; }
+    header .my-photo {
+      width: 384px;
+      height: 484px;
+      border-radius: 100%;
+      align-self: center;
+      background: url(../images/myPhoto2.jpg) no-repeat -6px -100px;
+      background-size: 100% 160%; }
+    header > :nth-child(2) {
+      order: -1;
+      height: 224px;
+      padding-top: 97px;
+      text-align: center; }
+      header > :nth-child(2) > :first-child {
+        font-family: Helvetica-Bold;
+        font-size: 24px; }
+      header > :nth-child(2) > :nth-child(2) {
+        font-family: Helvetica-Bold;
+        font-size: 40px; }
+    header > :nth-child(3) {
+      height: 416px;
+      padding-top: 75px;
+      padding-left: 112px;
+      padding-right: 112px;
+      text-align: center; }
+      header > :nth-child(3) > first-child {
+        font-family: Georgia;
+        font-size: 20px; } }
+@media (max-width: 767px) {
+  header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #082841;
+    width: 336px;
+    color: white; } }
+  @media (max-width: 767px) and (max-width: 335px) {
+    header {
+      width: 100%; } }
+@media (max-width: 767px) {
+    header .my-photo {
+      width: 144px;
+      height: 144px;
+      border-radius: 100%;
+      align-self: center;
+      background: url(../images/myPhoto2.jpg) no-repeat -4px -30px;
+      background-size: 100% 140%; }
+    header > :nth-child(2) {
+      order: -1;
+      height: 168px;
+      padding-top: 33px;
+      text-align: center; }
+      header > :nth-child(2) > :first-child {
+        font-family: Helvetica-Bold;
+        font-size: 16px; }
+      header > :nth-child(2) > :nth-child(2) {
+        font-family: Helvetica-Bold;
+        font-size: 32px;
+        padding-left: 20px;
+        padding-right: 20px; }
+    header > :nth-child(3) {
+      height: auto;
+      padding-top: 30px;
+      padding-left: 15px;
+      padding-right: 16px;
+      text-align: center; }
+      header > :nth-child(3) > first-child {
+        font-family: Georgia;
+        font-size: 20px; } }
+
+/*# sourceMappingURL=header.css.map */

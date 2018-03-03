@@ -1,0 +1,183 @@
+@media (min-width: 1349px) {
+  footer {
+    width: 1349px;
+    margin: 0 auto;
+    height: 700px;
+    background: linear-gradient(to top right, #E6F0F0, #E9F0E6);
+    padding-top: 1px; }
+    footer > :first-child {
+      margin-top: 81px;
+      margin-left: 248px;
+      font-family: Helvetica-Bold;
+      font-size: 40px; } }
+@media (min-width: 1024px) and (max-width: 1348px) {
+  footer {
+    width: 1020px;
+    margin: 0 auto;
+    height: 700px;
+    background: linear-gradient(to top right, #E6F0F0, #E9F0E6);
+    padding-top: 1px; }
+    footer > :first-child {
+      margin-top: 81px;
+      margin-left: 39px;
+      font-family: Helvetica-Bold;
+      font-size: 40px; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    width: 768px;
+    margin: 0 auto;
+    height: 700px;
+    background: linear-gradient(to top right, #E6F0F0, #E9F0E6);
+    padding-top: 1px; }
+    footer > :first-child {
+      margin-top: 33px;
+      margin-left: 32px;
+      font-family: Helvetica-Bold;
+      font-size: 40px; } }
+@media (max-width: 767px) {
+  footer {
+    width: 336px;
+    margin: 0 auto;
+    height: auto;
+    padding-bottom: 30px;
+    background: linear-gradient(to top right, #E6F0F0, #E9F0E6);
+    padding-top: 1px; }
+    footer > :first-child {
+      margin-top: 33px;
+      margin-left: 4.1666666667%;
+      margin-right: 4.7619047619%;
+      font-family: Helvetica-Bold;
+      font-size: 32px; } }
+@media (max-width: 767px) and (max-width: 335px) {
+  footer {
+    width: 100%; } }
+@media (min-width: 1024px) {
+  .contacts {
+    margin-top: 61px;
+    font-family: Georgia;
+    font-size: 16px;
+    display: flex; }
+    .contacts > :first-child {
+      display: flex;
+      flex-direction: column;
+      width: 304px; }
+      .contacts > :first-child > :nth-child(2) p {
+        margin-top: 20px; }
+      .contacts > :first-child > :nth-child(2) ul li {
+        margin-left: 20px;
+        margin-top: 20px; }
+      .contacts > :first-child > :nth-child(2) ul a {
+        color: #DD3E18; }
+    .contacts > :nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      width: auto; }
+      .contacts > :nth-child(2) > :nth-child(n) {
+        width: 544px; }
+      .contacts > :nth-child(2) > input:first-child {
+        height: 48px;
+        background-color: white; }
+      .contacts > :nth-child(2) > input:nth-child(2) {
+        height: 48px;
+        margin-top: 24px;
+        background-color: white; }
+      .contacts > :nth-child(2) > textarea {
+        height: 192px;
+        width: 544px;
+        margin-top: 24px;
+        background-color: white; }
+      .contacts > :nth-child(2) button {
+        margin-top: 72px;
+        background-color: #DD3E18;
+        color: white;
+        height: 49px;
+        font-size: 16px;
+        font-family: Helvetica-Bold; } }
+@media (min-width: 1349px) {
+  .contacts {
+    margin-left: 248px; } }
+@media (min-width: 1024px) and (max-width: 1348px) {
+  .contacts {
+    margin-left: 40px; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contacts {
+    margin-top: 21px;
+    margin-left: 32px; }
+    .contacts > :first-child {
+      display: flex; }
+      .contacts > :first-child > :first-child {
+        width: 130%; }
+      .contacts > :first-child > :last-child {
+        width: 70%; }
+        .contacts > :first-child > :last-child ul li {
+          margin-left: 20px; }
+        .contacts > :first-child > :last-child ul a {
+          color: #DD3E18; }
+    .contacts > :nth-child(2) {
+      display: flex;
+      flex-direction: column; }
+      .contacts > :nth-child(2) > :nth-child(n) {
+        width: 704px; }
+      .contacts > :nth-child(2) > input:first-child {
+        height: 48px;
+        background-color: white; }
+      .contacts > :nth-child(2) > input:nth-child(2) {
+        height: 48px;
+        margin-top: 24px;
+        background-color: white; }
+      .contacts > :nth-child(2) > textarea {
+        height: 192px;
+        width: 704px;
+        margin-top: 24px;
+        background-color: white; }
+      .contacts > :nth-child(2) button {
+        margin-top: 72px;
+        background-color: #DD3E18;
+        color: white;
+        height: 49px;
+        font-size: 16px;
+        font-family: Helvetica-Bold; } }
+@media (max-width: 767px) {
+  .contacts {
+    margin-top: 15px;
+    margin-left: 5.2631578947%; }
+    .contacts > :first-child {
+      display: flex;
+      flex-direction: column; }
+      .contacts > :first-child > :first-child {
+        margin-top: 9px; }
+      .contacts > :first-child > :last-child {
+        margin-top: 15px;
+        order: -1; }
+        .contacts > :first-child > :last-child ul li {
+          margin-left: 20px;
+          margin-top: 10px; }
+        .contacts > :first-child > :last-child ul a {
+          color: #DD3E18; }
+    .contacts > :nth-child(2) {
+      display: flex;
+      flex-direction: column; }
+      .contacts > :nth-child(2) > :nth-child(n) {
+        width: 90.4761904762%; }
+      .contacts > :nth-child(2) > input:first-child {
+        height: 48px;
+        background-color: white;
+        margin-top: 10px; }
+      .contacts > :nth-child(2) > input:nth-child(2) {
+        height: 48px;
+        margin-top: 24px;
+        background-color: white; }
+      .contacts > :nth-child(2) > textarea {
+        height: 192px;
+        width: 90.4761904762%;
+        margin-top: 24px;
+        background-color: white; }
+      .contacts > :nth-child(2) button {
+        margin-top: 72px;
+        background-color: #DD3E18;
+        color: white;
+        height: 49px;
+        font-size: 16px;
+        font-family: Helvetica-Bold; } }
+
+/*# sourceMappingURL=footer.css.map */

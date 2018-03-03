@@ -1,0 +1,444 @@
+@media (min-width: 1349px) {
+  main {
+    width: 1349px;
+    margin: 0 auto;
+    height: auto;
+    &>:first-child {
+      padding: {
+        top: 106px;
+        left: 248px;
+      }
+      font: {
+        family: Helvetica-Bold;
+        size: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1348px) {
+  main {
+    width: 1020px;
+    margin: 0 auto;
+    height: auto;
+    &>:first-child {
+      padding: {
+        top: 106px;
+        left: 40px;
+      }
+      font: {
+        family: Helvetica-Bold;
+        size: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+    width: 768px;
+    margin: 0 auto;
+    height: auto;
+    &>:first-child {
+      padding: {
+        top: 82px;
+        left: 40px;
+      }
+      font: {
+        family: Helvetica-Bold;
+        size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 336px;
+    margin: 0 auto;
+    height: auto;
+    &>:first-child {
+      padding: {
+        top: 91px;
+        left: 16px;
+      }
+      font: {
+        family: Helvetica-Bold;
+        size: 32px;
+      }
+    }
+  }
+  @media (max-width: 335px) {
+    main {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .expectations {
+    width: 944px;
+    height: 448px;
+    display: flex;
+    flex-wrap: wrap;
+    &>div {
+      background-color: #E6F0F0;
+      display: flex;
+      flex-direction: column;
+      &>p {
+        margin-left: 32px;
+      }
+      &>:first-child {
+        margin-top: 25px;
+        font: {
+          family: Helvetica-Bold;
+          size: 24px;
+        }
+      }
+      &>:nth-child(2) {
+        margin-top: 64px;
+        font: {
+          family: Georgia;
+          size: 16px;
+        }
+      }
+    }
+    &>:first-child {
+      width: 560px;
+      background-color: #E6F0F0;
+      border: {
+        bottom: 10px solid white;
+        right: 10px solid white;
+      }
+    }
+    &>:nth-child(2) {
+      width: 364px;
+      border: {
+        bottom: 10px solid white;
+        left: 10px solid white;
+      }
+    }
+    &>:nth-child(3) {
+      width: 364px;
+      border: {
+        top: 10px solid white;
+        right: 10px solid white;
+      }
+    }
+    &>:nth-child(4) {
+      width: 560px;
+      border: {
+        top: 10px solid white;
+        left: 10px solid white;
+      }
+    }
+  }
+  .links {
+    display: none;
+  }
+}
+
+@media (min-width: 1349px) {
+  .expectations {
+    margin: {
+      top: 38px;
+      left: 248px;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1348px) {
+  .expectations {
+    margin: {
+      top: 38px;
+      left: 40px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .expectations {
+    margin: {
+      top: 38px;
+      left: 32px;
+    }
+    width: 704px;
+    height: 448px;
+    display: flex;
+    flex-wrap: wrap;
+    &>div {
+      background: linear-gradient(to top right, #E6F0F0, #E9F0E6);
+      display: flex;
+      flex-direction: column;
+      &>p {
+        margin-left: 32px;
+      }
+      &>:first-child {
+        margin-top: 25px;
+        font: {
+          family: Helvetica-Bold;
+          size: 24px;
+        }
+      }
+      &>:nth-child(2) {
+        margin-top: 40px;
+        font: {
+          family: Georgia;
+          size: 16px;
+        }
+      }
+    }
+    &>:first-child {
+      width: 462px;
+      background: linear-gradient(to top right, #E6F0F0, #E9F0E6);
+      border: {
+        bottom: 10px solid white;
+        right: 10px solid white;
+      }
+    }
+    &>:nth-child(2) {
+      width: 219px;
+      border: {
+        bottom: 10px solid white;
+        left: 10px solid white;
+      }
+    }
+    &>:nth-child(3) {
+      width: 219px;
+      border: {
+        top: 10px solid white;
+        right: 10px solid white;
+      }
+    }
+    &>:nth-child(4) {
+      width: 462px;
+      border: {
+        top: 10px solid white;
+        left: 10px solid white;
+      }
+    }
+  }
+  .links {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .expectations {
+    background: linear-gradient(to top right, #E6F0F0, #E9F0E6);
+    margin: {
+      top: 13px;
+      left: 16px/336px*100%;
+    }
+    width: 304px/336px*100%;
+    heigt: 304px;
+    overflow: hidden;
+    &>:first-child {
+      height:304px;
+      &>:first-child {
+        margin: {
+          top: 13px;
+          left: 16px/336px*100%;
+        }
+        font: {
+          family: Helvetica-Bold;
+          size: 24px;
+        }
+      }
+      &>:nth-child(2) {
+        margin: {
+          top: 24px/336px*100%;
+          left: 16px/336px*100%;
+          right: 40px/336px*100%;
+        }
+      }
+    }
+    &>:nth-child(n+2) {
+      display:none;
+    }
+  }
+  .links {
+    height: 115px;
+    button {
+      background-color: #DD3E18;
+      border-radius: 100%;
+      width: 10px;
+      height: 10px;
+      margin-top: 24px;
+      &:first-child {
+        margin-left: 116px/336px*100%;
+      }
+      &:nth-child(n+2) {
+        margin-left: 24px/336px*100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-works {
+    height: auto;
+    width: 924px;
+    padding-bottom: 145px;
+    &>p {
+      font: {
+        size: 40px;
+        family: Helvetica-Bold;
+      }
+      padding-top: 129px;
+    }
+    &>:nth-child(2) {
+      height: auto;
+      &>div {
+        display: flex;
+      }
+      &>:first-child {
+        margin-top: 63px;
+        height: auto;
+      }
+      &>:nth-child(n+2) {
+        margin-top: 145px;
+        height: auto;
+      }
+      img {
+        width: 544px;
+        height: 384px;
+      }
+      &>:nth-child(2n+1) p {
+        margin-left: 96px;
+      }
+      &>:nth-child(2n) {
+        .aside {
+          order: -1;
+        }
+      }
+      .aside {
+        &>:first-child {
+          font : {
+            size: 24px;
+            family: Helvetica-Bold;
+          }
+        }
+        &>:nth-child(2) {
+          margin-top: 216px;
+          font: {
+            size: 16px;
+            family: Georgia;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1349px) {
+  .my-works {
+    margin-left: 248px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1348px) {
+  .my-works {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .my-works {
+    height: auto;
+    width: 685px;
+    padding-bottom: 120px;
+    margin: {
+      top: 105px;
+      left: 32px;
+    }
+    &>p {
+      font: {
+        size: 40px;
+        family: Helvetica-Bold;
+      }
+    }
+    &>:nth-child(2) {
+      margin-top: 64px;
+      height: auto;
+      img {
+        width: 685px;
+        height: 496px;
+      }
+      &>:nth-child(n+2) {
+        margin-top: 102px;
+      }
+      &>div {
+        display: flex;
+        flex-direction: column;
+        .aside {
+          order: -1;
+          display: flex;
+          &>p {
+            width: 100%;
+          }
+          &>:first-child {
+            font : {
+              size: 24px;
+              family: Helvetica-Bold;
+            }
+          }
+          &>:nth-child(2) {
+            font: {
+              size: 16px;
+              family: Georgia;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .my-works {
+    height: auto;
+    width: 304px/336px*100%;
+    padding-bottom: 120px;
+    margin: {
+      left: 16px/336px*100%;
+    }
+    &>p {
+      font: {
+        size: 32px;
+        family: Helvetica-Bold;
+      }
+    }
+    &>:nth-child(2) {
+      margin-top: 38px;
+      &>:nth-child(n+2) {
+        margin-top: 96px;
+      }
+    }
+    &>div>div {
+      display: flex;
+      flex-direction: column;
+      img {
+        height: 216px;
+        width: 100%;
+      }
+      .aside {
+        display: flex;
+        flex-direction: column;
+        order: -1;
+        &>:first-child {
+          font : {
+            size: 24px;
+            family: Helvetica-Bold;
+          }
+        }
+        &>:nth-child(2) {
+          font: {
+            size: 16px;
+            family: Georgia;
+          }
+        }
+      }
+    }
+  }
+}
