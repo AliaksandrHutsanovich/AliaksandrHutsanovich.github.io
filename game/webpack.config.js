@@ -1,5 +1,5 @@
 module.exports = [{
-    entry: "./js/forLevel1.js", 
+    entry: "./js/forLevel1.js",
     output:{
         path: "public",     
         filename: "bundle1.js"      
