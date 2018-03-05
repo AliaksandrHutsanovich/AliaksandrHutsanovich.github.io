@@ -343,10 +343,10 @@ module.exports =function drawingFrame() {
         
     }
     
-    if (y11==-10 && document.location.href=="https://sanderas.github.io/views/level5.html") { //the condition of going to next level
+    if (y11==-10 && document.location.href=="https://sanderas.github.io/game/views/level5.html") { //the condition of going to next level
         document.location.href="../views/YouWon.html";
     }
-    if (y11==-10 && document.location.href!="https://sanderas.github.io/views/level5.html") {
+    if (y11==-10 && document.location.href!="https://sanderas.github.io/game/views/level5.html") {
         var mas=document.querySelector(".elements>:nth-child(3)").innerText.split("");
         for (var i=0; i<mas.length; i++) {
             if (Number(mas[i]) || (Number(mas[i])==0 && mas[i]!=" ")) {
