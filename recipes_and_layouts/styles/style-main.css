@@ -1953,13 +1953,13 @@
     }
 
     main>:nth-child(9)>:first-child figure {
-        background: url(../images/bag2.jpg) no-repeat 14px -39px;
+        background: url(../images/Bag2.jpg) no-repeat 14px -39px;
         width: 265px;
         height: 480px;
     }
 
     main>:nth-child(9)>:nth-child(2) figure {
-        background: url(../images/bag1.jpg) no-repeat 30px 5px;
+        background: url(../images/Bag1.jpg) no-repeat 30px 5px;
         width: 265px;
         height: 480px;
     }
