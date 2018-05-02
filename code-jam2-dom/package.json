@@ -1,0 +1,9 @@
+{
+  "name": "code-jam2-dom",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+ "lite-server": "^2.2.2" }
+}

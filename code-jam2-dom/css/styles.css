@@ -1,0 +1,84 @@
+.component {
+    width: 380px;
+    height: auto;
+    background-color: rgb(255, 255, 224);
+    left: calc(100vw - 390px);
+}
+
+.component__container {
+    width: 368px;
+    height: auto;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: Arial;
+}
+
+.component__slider {
+    width: 300px;
+    height: 216px;
+    overflow-y: auto;
+    border: 2px solid black;
+}
+
+.component__closer {
+    height: 30px;
+    width: 30px;
+    border: none;
+    margin-left: 22px;
+    background: white url(../images/closed-button.png) no-repeat;
+    background-size: 30px 30px;
+}
+
+.component__slider__item {
+    padding: 0 10px;
+}
+
+.component__menu {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom:11px;
+    font-family: Arial;
+}
+
+
+.component__slider-switcher {
+    display: flex;
+    margin-left: 70px;
+}
+
+.component__slider-switcher {
+    height: 20px;
+    width: auto;
+}
+
+.component__slider-switcher>button {
+    width: 20px;
+    border: none;
+    background-size: 10px 10px;
+}
+
+.component__slider-switcher>button:first-child {
+    background: white url(../images/left-arrow.png) no-repeat 0px;
+    background-size: 20px 20px;
+}
+
+.component__slider-switcher>button:last-child {
+    background: white url(../images/right-arrow.png) no-repeat 0px;
+    background-size: 20px 20px;
+}
+
+.slider-indicators {
+    display: flex;
+    align-items: center;
+}
+
+.slider-indicators>div {
+    border: 1px solid grey;
+    border-radius: 100%;
+    width: 6px;
+    height: 6px;
+    margin: 0 7px;
+    background-color: grey;
+}
