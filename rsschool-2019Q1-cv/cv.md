@@ -178,8 +178,8 @@ Studing in BSUIR 2015 - 2019
 
 ### English experience
 
-* *taking english courses with native speaker in Tarek Amer School*
-August 2016 - June 2018
+* **taking english courses with native speaker in Tarek Amer School**
+(August 2016 - June 2018)
 
-* *taking english courses in Epol Soft*
-September 2018 - current time
+* **taking english courses in Epol Soft**
+(September 2018 - current time)
