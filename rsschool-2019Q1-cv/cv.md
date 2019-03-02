@@ -25,8 +25,8 @@ The another one reason is to train my skills in front-end.
 
 ### Programming languages
 
-*Javascript
-*Java
+* Javascript
+* Java
 
 ### Frameworks
 
