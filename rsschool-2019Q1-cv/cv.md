@@ -1,16 +1,16 @@
 # Gutsanovich Aliaksandr
 
-#### Contacts
+## Contacts
 
-##### My email
+### My email
 
 guts-817@rambler.ru
 
-##### My telephone
+### My telephone
 
 +375 29 753-00-57
 
-#### Summary
+## Summary
 
 My purpose is to be front-end developer and improve my skills.
 I am very interested in coding javascript and usage javascript frameworks, such as ReactJs, AngularJs, Angular 2-7.
@@ -21,14 +21,14 @@ Having worked and compared two directions, I chose front-end. Because I think th
 I would like to show my skills to some mentor from Brest to get short listed om some position.
 The another one reason is to train my skills in front-end.
 
-#### Skills
+## Skills
 
-##### Programming languages
+### Programming languages
 
-*Javascript
-*Java
+* Javascript
+* Java
 
-##### Frameworks
+### Frameworks
 
 * ReactJS
 * AngularJS
@@ -37,18 +37,18 @@ The another one reason is to train my skills in front-end.
 * Spring (java framework)
 * Hibernate
 
-##### Methodologies
+### Methodologies
 
 * Scrum
 
-##### Other technologies and tools
+### Other technologies and tools
 
 * Git
 * HTML
 * CSS
 * SASS
 
-#### Example of my code
+## Example of my code
 
 ```javascript
 class Node {
@@ -146,9 +146,9 @@ class Node {
 }
 ```
 
-#### Experience
+## Experience
 
-##### Experience in projects
+### Experience in projects
 
 **From June 2018 before current time**
 
@@ -158,7 +158,7 @@ Position: junior software developer
 
 Participation in projects: support and developing tools for assessment and recruitment in a company (full-stack developing).
 
-##### Training experience
+### Training experience
 
 Rolling scopes courses in 2017
 
@@ -167,19 +167,19 @@ Rolling scopes courses in 2017
 Studing in BSUIR 2015 - 2019
 
 
-#### Education
+## Education
 
 * BSUIR (2015 - 2019)
 * Rolling-scopes courses 2017
 
-#### English level
+## English level
 
 **B2** - upper intermediate
 
-##### English experience
+### English experience
 
-**taking english courses with native speaker in Tarek Amer School**
-August 2016 - June 2018
+* **taking english courses with native speaker in Tarek Amer School**
+(August 2016 - June 2018)
 
-**taking english courses in Epol Soft**
-September 2018 - current time
+* **taking english courses in Epol Soft**
+(September 2018 - current time)
