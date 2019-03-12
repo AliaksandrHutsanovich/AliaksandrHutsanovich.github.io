@@ -19,7 +19,7 @@ Now I am working in the company Epol Soft as a junior software developer.
 I working in full-stack developing, but I think I need to choose only one direction. It is front-end or back-end.
 Having worked and compared two directions, I chose front-end. Because I think that javascript is the best programming language.
 I would like to show my skills to some mentor from Brest to get short listed om some position.
-The another one reason is to train my skills in front-end.
+The another one reason is to train my skills in front-end. Makeup and javascript.
 
 ## Skills
 
