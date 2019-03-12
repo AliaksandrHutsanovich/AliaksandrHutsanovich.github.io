@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML, CSS & Git Basics</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Hutsanovich Aliaksandr</h1>
+        <section class="section-contacts">
+            <aside>
+                <img src="images/code_example.png" />
+            </aside>
+            <h2>Contacts</h2>
+            <section class="section-contacts">
+                <h3>My email</h3>
+                <p>guts-817@rambler.ru</p>
+            </section>
+            <section class="section-contacts">
+                <h3>My telephone</h3>
+                <p>+375 29 753-00-57</p>
+            </section>
+        </section>
+        <section class="section-summary">
+            <div class="header-wrapper">
+                <div class="image">
+                    <img src="images/summary.png" />
+                </div>
+                <h2>Summary</h2>
+            </div>
+            <p>
+                My purpose is to be front-end developer and improve my skills. I am very interested in coding javascript and usage javascript
+                frameworks, such as ReactJs, AngularJs, Angular 2-7. I would like working with talented front-end developers
+                in one team in order to improve my experience. Now I am working in the company Epol Soft as a junior software
+                developer. I working in full-stack developing, but I think I need to choose only one direction. It is front-end
+                or back-end. Having worked and compared two directions, I chose front-end. Because I think that javascript
+                is the best programming language. I would like to show my skills to some mentor from Brest to get short listed
+                om some position. The another one reason is to train my skills in front-end.
+            </p>
+        </section>
+        <section>
+            <div class="header-wrapper">
+                <div class="image">
+                    <img src="images/skills.png" />
+                </div>
+                <h2>Skills</h2>
+            </div>
+            <section>
+                <h3>Programming languages</h3>
+                <ul>
+                    <li>
+                        <p>Javascript</p>
+                    </li>
+                    <li>
+                        <p>Java</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>
+                        <p>ReactJS</p>
+                    </li>
+                    <li>
+                        <p>AngularJS</p>
+                    </li>
+                    <li>
+                        <p>Angular 2-7</p>
+                    </li>
+                    <li>
+                        <p>Bootstrap (CSS framework)</p>
+                    </li>
+                    <li>
+                        <p>Spring (java framework)</p>
+                    </li>
+                    <li>
+                        <p>Hibernate</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Methodologies</h3>
+                <ul>
+                    <li>
+                        <p>Scrum</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Other technologies and tools</h3>
+                <ul>
+                    <li>
+                        <p>Git</p>
+                    </li>
+                    <li>
+                        <p>HTML</p>
+                    </li>
+                    <li>
+                        <p>CSS</p>
+                    </li>
+                    <li>
+                        <p>SASS</p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class="section-code_example">
+            <div class="header-wrapper">
+                <div class="image">
+                    <img src="images/code_example.png" />
+                </div>
+                <h2>The example of my code</h2>
+            </div>
+            <code>
+                class Node { 
+                    constructor(data, priority) { 
+                        this.data = data; 
+                        this.priority = priority; 
+                        this.left = null; 
+                        this.right = null;
+                        this.parent = null; 
+                    } 
+                    
+                    appendChild(node) { 
+                        if (!this.left && !this.right) { 
+                            this.left = node; node.parent = this; 
+                        } 
+                        else if (this.left && !this.right) { 
+                            if (node.priority != this.left.priority || node.data != this.left.data) { 
+                                this.right = node; 
+                                node.parent = this; 
+                            } 
+                        } 
+                    } 
+
+                    removeChild(node) { 
+                        if (node.priority === this.left.priority && node.data === this.left.data) { 
+                            this.left = null; 
+                            node.parent = null; 
+                        } 
+                        else if (node.priority === this.right.priority && node.data === this.right.data) { 
+                            this.right = null; 
+                            node.parent = null; 
+                        } 
+                        else { 
+                            throw new Error(); 
+                        }
+                    } 
+                    
+                    remove() { 
+                        if (this.parent) { 
+                            this.parent.removeChild(this); 
+                        } 
+                    } 
+                    
+                    swapWithParent() { 
+                        if (this.parent) {
+                            let childLeft = this.left, 
+                            childRight = this.right, 
+                            childParent = this.parent, 
+                            parentLeft = this.parent.left, 
+                            parentRight = this.parent.right, 
+                            parentParent = this.parent.parent; 
+                            if (this.priority === this.parent.left.priority) { 
+                                this.parent = parentParent; 
+                                if (this.parent) { 
+                                   this.switchParentChild(childParent); 
+                                } 
+                                this.left = childParent; 
+                                this.right = parentRight; 
+                                this.left.parent = this; 
+                                if (this.right) { 
+                                    this.right.parent = this; 
+                                } 
+                                this.left.left = childLeft; 
+                                this.left.right = childRight; 
+                            } 
+                            else if (this.priority === this.parent.right.priority) { 
+                                this.parent = parentParent; 
+                                if (this.parent) { 
+                                    this.switchParentChild(childParent); 
+                                } 
+                                this.left = parentLeft; 
+                                this.right = childParent; 
+                                this.right.parent = this; 
+                                if (this.left) { 
+                                    this.left.parent = this; 
+                                } 
+                                this.right.left = childLeft;
+                                this.right.right = childRight; 
+                            } 
+                        } 
+                    } 
+                
+                    switchParentChild(childParent) { 
+                        if (this.parent.left.priority === childParent.priority) { 
+                            this.parent.left = this; 
+                        } 
+                        else { 
+                            this.parent.right = this; 
+                        } 
+                    } 
+                }
+            </code>
+        </section>
+        <section>
+            <div class="header-wrapper">
+                <div class="image">
+                    <img src="images/experience.png" />
+                </div>
+                <h2>Experience</h2>
+            </div>
+            <section>
+                <h3>Experience in projects</h3>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>From June 2018 before current time</strong>
+                        </p>
+                        <p>
+                            <strong>Company:</strong> Epol Soft</p>
+                        <p>
+                            <strong>Position:</strong> junior software developer</p>
+                        <p>
+                            <strong>Participation in projects:</strong> support and developing tools for assessment and recruitment
+                            in a company (full-stack developing).</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Training experience</h3>
+                <ul>
+                    <li>
+                        <p>Rolling scopes courses in 2017</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Sanderas/react-redux">source code from Github</a>
+                    </li>
+                    <li>
+                        <p>Studing in BSUIR 2015 - 2019</p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <div class="header-wrapper">
+                <div class="image">
+                    <img src="images/education.png" />
+                </div>
+                <h2>Education</h2>
+            </div>
+            <ul>
+                <li>
+                    <p>BSUIR (2015 - 2019)</p>
+                </li>
+                <li>
+                    <p>Rolling-scopes courses 2017</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <div class="header-wrapper">
+                <div class="image">
+                    <img src="images/english_level.png" />
+                </div>
+                <h2>English level</h2>
+            </div>
+            <p>
+                <strong>B2</strong> upper intermediate</p>
+            <section>
+                <h3>English experience</h3>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>taking english courses with native speaker in Tarek Amer School</strong>
+                        </p>
+                        <p>(August 2016 - June 2018)</p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>taking english courses in Epol Soft</strong>
+                        </p>
+                        <p>(September 2018 - current time)</p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
