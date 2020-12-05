@@ -216,7 +216,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         },
     ], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(pageRoutes),
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(pageRoutes, { useHash: true }),
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_15__["BrowserAnimationsModule"],
             _modules__WEBPACK_IMPORTED_MODULE_12__["CustomMaterialModule"],
@@ -287,7 +287,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(pageRoutes),
+                    _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(pageRoutes, { useHash: true }),
                     _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
                     _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_15__["BrowserAnimationsModule"],
                     _modules__WEBPACK_IMPORTED_MODULE_12__["CustomMaterialModule"],
