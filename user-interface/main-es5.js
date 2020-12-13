@@ -455,7 +455,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         multi: true
       }],
       imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(pageRoutes, {
-        useHash: true
+        useHash: !!_environments_environment__WEBPACK_IMPORTED_MODULE_19__["environment"].production
       }), _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_15__["BrowserAnimationsModule"], _modules__WEBPACK_IMPORTED_MODULE_12__["CustomMaterialModule"], _modules__WEBPACK_IMPORTED_MODULE_12__["LoginModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _ngrx_store__WEBPACK_IMPORTED_MODULE_17__["StoreModule"].forRoot(Object.assign({}, _reducers__WEBPACK_IMPORTED_MODULE_20__["reducers"])), _ngrx_store_devtools__WEBPACK_IMPORTED_MODULE_18__["StoreDevtoolsModule"].instrument({
         maxAge: 25,
         logOnly: _environments_environment__WEBPACK_IMPORTED_MODULE_19__["environment"].production
@@ -485,7 +485,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         args: [{
           declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["SectionComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["ListOfCoursesComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["CourseComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["CoursePageComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["CoursesPageComponent"], _directives__WEBPACK_IMPORTED_MODULE_9__["BorderDirective"], _components__WEBPACK_IMPORTED_MODULE_8__["NoDataComponent"], _pipes__WEBPACK_IMPORTED_MODULE_13__["TransformTimePipe"], _pipes__WEBPACK_IMPORTED_MODULE_13__["OrderByPipe"], _pipes__WEBPACK_IMPORTED_MODULE_13__["DatePipe"], _components__WEBPACK_IMPORTED_MODULE_8__["ConfirmDialogComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["AddCourseComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["Page404Component"], _components__WEBPACK_IMPORTED_MODULE_8__["CoursesPageWrapperComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["LoadingBlockComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["AuthorsComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["ChipComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["InputDurationComponent"], _components__WEBPACK_IMPORTED_MODULE_8__["InputDateComponent"], _directives__WEBPACK_IMPORTED_MODULE_9__["ValidateOnEmptyDirective"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(pageRoutes, {
-            useHash: true
+            useHash: !!_environments_environment__WEBPACK_IMPORTED_MODULE_19__["environment"].production
           }), _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_15__["BrowserAnimationsModule"], _modules__WEBPACK_IMPORTED_MODULE_12__["CustomMaterialModule"], _modules__WEBPACK_IMPORTED_MODULE_12__["LoginModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _ngrx_store__WEBPACK_IMPORTED_MODULE_17__["StoreModule"].forRoot(Object.assign({}, _reducers__WEBPACK_IMPORTED_MODULE_20__["reducers"])), _ngrx_store_devtools__WEBPACK_IMPORTED_MODULE_18__["StoreDevtoolsModule"].instrument({
             maxAge: 25,
             logOnly: _environments_environment__WEBPACK_IMPORTED_MODULE_19__["environment"].production
@@ -3919,8 +3919,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var courses = _ref3.courses;
           _this9.courses = courses;
           _this9.searchedCourses = courses;
-
-          _this9.loadService.updateShow(false);
         };
 
         this.courses = [];
@@ -4186,11 +4184,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "LOADING BLOCK");
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -4232,10 +4226,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-loading-block"]],
       decls: 1,
       vars: 1,
-      consts: [["class", "loading_block", 4, "ngIf"], [1, "loading_block"]],
+      consts: [["class", "loading_block", 4, "ngIf"], [1, "loading_block"], [1, "spinner"]],
       template: function LoadingBlockComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, LoadingBlockComponent_div_0_Template, 3, 0, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, LoadingBlockComponent_div_0_Template, 2, 0, "div", 0);
         }
 
         if (rf & 2) {
@@ -4243,7 +4237,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"]],
-      styles: [".loading_block[_ngcontent-%COMP%] {\n  position: absolute;\n  width: 100%;\n  height: 100vh;\n  background-color: black;\n  top: 0;\n  left: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9sb2FkaW5nLWJsb2NrL2xvYWRpbmctYmxvY2suY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixNQUFNO0VBQ04sT0FBTztBQUNUIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9sb2FkaW5nLWJsb2NrL2xvYWRpbmctYmxvY2suY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sb2FkaW5nX2Jsb2NrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbn0iXX0= */"]
+      styles: [".loading_block[_ngcontent-%COMP%] {\n  position: absolute;\n  width: 100%;\n  height: 100vh;\n  background-color: rgb(214, 86, 86, 0.5);\n  top: 0;\n  left: 0;\n}\n\n@-webkit-keyframes spinner {\n  0% {\n      transform: translate3d(-50%, -50%, 0) rotate(0deg);\n  }\n  100% {\n       transform: translate3d(-50%, -50%, 0) rotate(360deg);\n  }\n}\n\n@keyframes spinner {\n  0% {\n      transform: translate3d(-50%, -50%, 0) rotate(0deg);\n  }\n  100% {\n       transform: translate3d(-50%, -50%, 0) rotate(360deg);\n  }\n}\n\n.spinner[_ngcontent-%COMP%] {\n  height: 100vh;\n  opacity: 1;\n  position: relative;\n  transition: opacity linear 0.1s;\n}\n\n.spinner[_ngcontent-%COMP%]::before {\n  -webkit-animation: 2s linear infinite spinner;\n          animation: 2s linear infinite spinner;\n  border: solid 3px #eee;\n  border-bottom-color: #EF6565;\n  border-radius: 50%;\n  content: \"\";\n  height: 40px;\n  left: 50%;\n  opacity: inherit;\n  position: absolute;\n  top: 50%;\n  transform: translate3d(-50%, -50%, 0);\n  transform-origin: center;\n  width: 40px;\n  will-change: transform;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9sb2FkaW5nLWJsb2NrL2xvYWRpbmctYmxvY2suY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsYUFBYTtFQUNiLHVDQUF1QztFQUN2QyxNQUFNO0VBQ04sT0FBTztBQUNUOztBQUVBO0VBQ0U7TUFDSSxrREFBa0Q7RUFDdEQ7RUFDQTtPQUNLLG9EQUFvRDtFQUN6RDtBQUNGOztBQVBBO0VBQ0U7TUFDSSxrREFBa0Q7RUFDdEQ7RUFDQTtPQUNLLG9EQUFvRDtFQUN6RDtBQUNGOztBQUVBO0VBQ0UsYUFBYTtFQUNiLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsK0JBQStCO0FBQ2pDOztBQUVBO0VBQ0UsNkNBQXFDO1VBQXJDLHFDQUFxQztFQUNyQyxzQkFBc0I7RUFDdEIsNEJBQTRCO0VBQzVCLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLFNBQVM7RUFDVCxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUixxQ0FBcUM7RUFDckMsd0JBQXdCO0VBQ3hCLFdBQVc7RUFDWCxzQkFBc0I7QUFDeEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2xvYWRpbmctYmxvY2svbG9hZGluZy1ibG9jay5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmxvYWRpbmdfYmxvY2sge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMHZoO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjE0LCA4NiwgODYsIDAuNSk7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbn1cblxuQGtleWZyYW1lcyBzcGlubmVyIHtcbiAgMCUge1xuICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgtNTAlLCAtNTAlLCAwKSByb3RhdGUoMGRlZyk7XG4gIH1cbiAgMTAwJSB7XG4gICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgtNTAlLCAtNTAlLCAwKSByb3RhdGUoMzYwZGVnKTtcbiAgfVxufVxuXG4uc3Bpbm5lciB7XG4gIGhlaWdodDogMTAwdmg7XG4gIG9wYWNpdHk6IDE7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSBsaW5lYXIgMC4xcztcbn1cblxuLnNwaW5uZXI6OmJlZm9yZSB7XG4gIGFuaW1hdGlvbjogMnMgbGluZWFyIGluZmluaXRlIHNwaW5uZXI7XG4gIGJvcmRlcjogc29saWQgM3B4ICNlZWU7XG4gIGJvcmRlci1ib3R0b20tY29sb3I6ICNFRjY1NjU7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgY29udGVudDogXCJcIjtcbiAgaGVpZ2h0OiA0MHB4O1xuICBsZWZ0OiA1MCU7XG4gIG9wYWNpdHk6IGluaGVyaXQ7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA1MCU7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoLTUwJSwgLTUwJSwgMCk7XG4gIHRyYW5zZm9ybS1vcmlnaW46IGNlbnRlcjtcbiAgd2lkdGg6IDQwcHg7XG4gIHdpbGwtY2hhbmdlOiB0cmFuc2Zvcm07XG59XG4iXX0= */"]
     });
     /*@__PURE__*/
 
@@ -5807,7 +5801,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @ngrx/store */
     "./node_modules/@ngrx/store/__ivy_ngcc__/fesm2015/store.js");
 
-    var CoursesEffects = function CoursesEffects(actions$, courseService, store) {
+    var CoursesEffects = function CoursesEffects(actions$, courseService, store, loadService) {
       var _this15 = this;
 
       _classCallCheck(this, CoursesEffects);
@@ -5815,6 +5809,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       this.actions$ = actions$;
       this.courseService = courseService;
       this.store = store;
+      this.loadService = loadService;
       this.makeCoursesRequest$ = this.actions$.pipe(Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_2__["ofType"])(src_app_actions__WEBPACK_IMPORTED_MODULE_4__["makeCoursesRequest"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])(function (_ref7) {
         var index = _ref7.index,
             quantity = _ref7.quantity,
@@ -5829,12 +5824,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               courses: courses
             }));
           }
+
+          _this15.loadService.updateShow(false);
         }));
       }));
     };
 
     CoursesEffects.ɵfac = function CoursesEffects_Factory(t) {
-      return new (t || CoursesEffects)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_ngrx_effects__WEBPACK_IMPORTED_MODULE_2__["Actions"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](src_app_services__WEBPACK_IMPORTED_MODULE_5__["CoursesService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_6__["Store"]));
+      return new (t || CoursesEffects)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_ngrx_effects__WEBPACK_IMPORTED_MODULE_2__["Actions"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](src_app_services__WEBPACK_IMPORTED_MODULE_5__["CoursesService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_6__["Store"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](src_app_services__WEBPACK_IMPORTED_MODULE_5__["LoadService"]));
     };
 
     CoursesEffects.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
@@ -5856,6 +5853,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           type: src_app_services__WEBPACK_IMPORTED_MODULE_5__["CoursesService"]
         }, {
           type: _ngrx_store__WEBPACK_IMPORTED_MODULE_6__["Store"]
+        }, {
+          type: src_app_services__WEBPACK_IMPORTED_MODULE_5__["LoadService"]
         }];
       }, {
         makeCoursesRequest$: []
